@@ -14,7 +14,7 @@ sudo chmod a+rx /usr/local/bin/yt-dlp
 
 **Windows:**
 
-- Download yt-dlp.exe file from [yt-dlp GitHub Release](https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file#recommended "yt-dlp GitHub repo").
+- Download `yt-dlp.exe` file from [yt-dlp GitHub Release](https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file#recommended "yt-dlp GitHub repo").
 - Add it to your system `PATH`.
 
 ## 🧰 Basic Usage
@@ -95,7 +95,7 @@ yt-dlp -x --audio-format mp3 --embed-thumbnail <URL>
 
 ### 📋 Naming & Organization
 
-13. Download with specific filename (default to `"%(title)s [%(id)s].%(ext)s"`).
+11. Download with specific filename (default to `"%(title)s [%(id)s].%(ext)s"`).
 
 ```bash
 yt-dlp -o "%(channel)s-%(title)s.%(ext)s" <URL>
@@ -104,7 +104,7 @@ yt-dlp -o "%(channel)s-%(title)s.%(ext)s" <URL>
 > Common fields for filename include:
 > `id`, `title`, `ext`, `channel`, `upload_date`, `duration`, `autonumber`, `playlist_title`, `playlist_index`, etc.
 
-14. Create directory structure for downloads.
+12. Create directory structure for downloads.
 
 ```bash
 yt-dlp -o "%(uploader)s/%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s" <URL>
@@ -112,25 +112,25 @@ yt-dlp -o "%(uploader)s/%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s" <UR
 
 ### 📄 Subtitles & Extras
 
-15. Download video with embedded subtitles.
+13. Download video with embedded subtitles.
 
 ```bash
 yt-dlp --embed-subs <URL>
 ```
 
-16. Download specific language subtitles.
+14. Download video with specific language subtitles.
 
 ```bash
 yt-dlp --write-sub --sub-lang en <URL>
 ```
 
-17. Download only video thumbnail.
+15. Download only video thumbnail.
 
 ```bash
 yt-dlp --skip-download --write-thumbnail <URL>
 ```
 
-18. Download video with thumbnail and metadata.
+16. Download video with thumbnail and metadata.
 
 ```bash
 yt-dlp --write-thumbnail --add-metadata <URL>
@@ -138,14 +138,14 @@ yt-dlp --write-thumbnail --add-metadata <URL>
 
 ## 🎞️ Working with Playlists
 
-19. Download all videos from playlist.
+17. Download all videos from playlist.
 
 ```bash
 yt-dlp <Playlist_URL>
 ```
 > Use `--no-playlist` when downloading just one video from playlist URL.
 
-20. Download specific videos from playlist.
+18. Download specific videos from playlist.
 
 ```bash
 yt-dlp --playlist-items 2,4-6,-1 <Playlist_URL>
@@ -153,39 +153,33 @@ yt-dlp --playlist-items 2,4-6,-1 <Playlist_URL>
 
 > This will download 2nd, 4th, 5th, 6th and last videos on that playlist.
 
-21. Download all videos from a channel.
+19. Download all videos from a channel.
 
 ```bash
-yt-dlp https://www.youtube.com/c/ChannelName
+yt-dlp https://www.youtube.com/@Fireship/videos
 ```
 
 ## 🔄 Advanced Options
 
-22. Resume partially downloaded files.
-
-```bash
-yt-dlp -c <URL>
-```
-
-23. Download through a proxy.
+20.  Download through a proxy.
 
 ```bash
 yt-dlp --proxy http://proxy.example.com:8000 <URL>
 ```
 
-24. Download from list of URLs.
+21. Download from list of URLs.
 
 ```bash
 yt-dlp -a urls.txt
 ```
 
-1.  Limit download rate.
+22.  Limit download rate.
 
 ```bash
 yt-dlp --limit-rate 1M <URL>
 ```
 
-27. Skip files that already exist.
+23. Skip files that already exist.
 
 ```bash
 yt-dlp --no-overwrites <URL>
@@ -193,19 +187,19 @@ yt-dlp --no-overwrites <URL>
 
 ## 🔐 Authentication
 
-29. Login with username and password (for sites like Udemy).
+24. Login with username and password (for sites like Udemy).
 
 ```bash
 yt-dlp -u username -p password <URL>
 ```
 
-30. Use cookies from browser.
+25. Use cookies from browser.
 
 ```bash
 yt-dlp --cookies-from-browser chrome <URL>
 ```
 
-31. Use cookies file.
+26. Use cookies file.
 
 ```bash
 yt-dlp --cookies cookies.txt <URL>
@@ -213,7 +207,7 @@ yt-dlp --cookies cookies.txt <URL>
 
 ## 🧹 Maintenance
 
-32. Update `yt-dlp`.
+27. Update `yt-dlp`.
 
 ```bash
 yt-dlp -U
