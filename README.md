@@ -12,6 +12,7 @@ This repo is a personal knowledge base where I:
 
 - `yt-dlp` – advance video downloading
 - `gallery-dl` - download image galleries and collections from huge list of websites
+- `winget` - microsoft windows cli based application manager
 - *...and many more coming soon.*
 
 ## 🧠 Why?
