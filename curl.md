@@ -74,11 +74,11 @@ curl -O https://example.com/file.zip
 # Save with custom name
 curl -o download.zip https://example.com/file.zip
 
-# Upload file using POST
-curl -F "file=@localfile.txt" https://httpbin.org/post
+# Upload file using PUT
+curl -X PUT --data-binary "@localfile.txt" https://httpbin.org/put
 
-# Upload using PUT
-curl -T localfile.txt https://httpbin.org/put
+# Upload using POST
+curl -X POST -F "file=@localfile.txt" https://httpbin.org/put
 ```
 
 ### 🔐 Authentication
