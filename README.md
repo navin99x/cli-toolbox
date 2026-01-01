@@ -14,6 +14,9 @@ This repo is a personal knowledge base where I:
 - `gallery-dl` - download image galleries and collections from huge list of websites
 - `winget` - microsoft windows cli based application manager
 - `curl` - transfer data over internet
+- `id3v2` - MP3 metadata management with eyeD3
+- `adb` - Android Debug Bridge for device management
+- `age` - Simple, modern & secure file encryption
 - *...and many more coming soon.*
 
 ## 🧠 Why?
