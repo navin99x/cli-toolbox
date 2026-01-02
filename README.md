@@ -17,6 +17,7 @@ This repo is a personal knowledge base where I:
 - `id3v2` - MP3 metadata management with eyeD3
 - `adb` - Android Debug Bridge for device management
 - `age` - Simple, modern & secure file encryption
+- `gpg` - encrypt and signs file
 - *...and many more coming soon.*
 
 ## 🧠 Why?
