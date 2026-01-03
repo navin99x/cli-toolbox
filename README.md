@@ -18,6 +18,7 @@ This repo is a personal knowledge base where I:
 - `adb` - Android Debug Bridge for device management
 - `age` - Simple, modern & secure file encryption
 - `gpg` - encrypt and signs file
+- `docker` - application containerization tool
 - *...and many more coming soon.*
 
 ## 🧠 Why?
